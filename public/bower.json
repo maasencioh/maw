@@ -3,7 +3,10 @@
   "description": "Con todo el amor para mi vida",
   "main": "index.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.4.0"
+    "polymer": "Polymer/polymer#^1.4.0",
+    "paper-scroll-header-panel": "PolymerElements/paper-scroll-header-panel#^1.0.16",
+    "paper-toolbar": "PolymerElements/paper-toolbar#^1.1.6",
+    "iron-icons": "PolymerElements/iron-icons#^1.1.3"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
