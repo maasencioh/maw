@@ -1,0 +1,7 @@
+{
+  "name": "maw",
+  "short_name": "maw",
+  "description": "Con todo el amor para mi vida",
+  "start_url": "/",
+  "display": "standalone"
+}
