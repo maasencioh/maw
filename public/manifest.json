@@ -2,6 +2,10 @@
   "name": "maw",
   "short_name": "maw",
   "description": "Con todo el amor para mi vida",
-  "start_url": "/",
-  "display": "standalone"
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#303F9F",
+  "background_color": "#607D8B"
 }

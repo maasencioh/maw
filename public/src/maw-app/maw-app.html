@@ -7,21 +7,35 @@
         display: block;
       }
     </style>
-    <h2>Hello [[prop1]]</h2>
+
+    <!-- Regular page -->
+    <template is="dom-if" if="{{!notFound}}" restamp="true">
+      <h2>Hello world</h2>
+    </template>
+
+    <!-- 404 page -->
+    <template is="dom-if" if="{{notFound}}" restamp="true">
+      <h2>Page not found</h2>
+    </template>
   </template>
 
   <script>
     Polymer({
-
       is: 'maw-app',
 
       properties: {
-        prop1: {
-          type: String,
-          value: 'maw-app',
-        },
+        notFound: {
+          type: Boolean,
+          value: false,
+          notify: true,
+          reflectToAttribute: true,
+          observer: 'logChange'
+        }
       },
 
+      logChange: function(newValue, oldValue) {
+        console.log('Changed! To:', newValue);
+      }
     });
   </script>
 </dom-module>
